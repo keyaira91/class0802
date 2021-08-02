@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-
+  colors = ["Teal", "Pink", "Black"];
 }
