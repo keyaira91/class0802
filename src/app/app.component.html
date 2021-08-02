@@ -1,5 +1,5 @@
 <h1>My Favorite Colors</h1>
-
-<ul>
+<span *ngIf="colors.length == 0">I don't have any favorite colors</span>
+<ul *ngIf="colors.length > 0">
   <li *ngFor="let c of colors">{{ c }}</li>
 </ul>
