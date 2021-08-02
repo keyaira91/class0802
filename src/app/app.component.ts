@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'class0802';
+
+
+  colors = ["Teal", "Black", "Pink"]
+
 }
