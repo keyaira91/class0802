@@ -7,11 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  colors = ["Teal", "Pink", "Green"];
 
-styleFive= {
-  'font-size': '4px',
-  'background-color': 'pink'
-}
 
 }
