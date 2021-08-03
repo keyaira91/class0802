@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+showColor: boolean = false;
+changeColor() :void {
+  this.showColor = !this.showColor;
+}
+
+
+
+caption: string = "Show Text"
+showInfo: boolean = false;
+changeData() :void {
+  this.showInfo = !this.showInfo;
+}
 
 
 }
