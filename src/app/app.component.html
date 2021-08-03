@@ -1,6 +1,10 @@
 <ul>
   <li *ngFor="let c of colors" [ngSwitch]="c">{{ c }}
-    <span *ngSwitchCase="'Teal'"> is my favorite</span>
-    <span *ngSwitchCase="'Pink'"> is my second best</span>
+    <span [style]="{color: c, fontWeight:'bold'}">
+      <span *ngSwitchCase="'Teal'"> is my favorite</span>
+      <span *ngSwitchCase="'Pink'"> is my second best</span>
+    </span>
+    <span [style]="{color: 'green'}">Two</span>
+    <span [style.color]="'brown'">Three</span>
   </li>
 </ul>
