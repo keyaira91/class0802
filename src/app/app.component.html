@@ -1,10 +1,12 @@
+<h1 class="red">My Favorite Colors</h1>
+
 <ul>
-  <li *ngFor="let c of colors" [ngSwitch]="c">{{ c }}
-    <span [style]="{color: c, fontWeight:'bold'}">
-      <span *ngSwitchCase="'Teal'"> is my favorite</span>
-      <span *ngSwitchCase="'Pink'"> is my second best</span>
-    </span>
-    <span [style]="{color: 'green'}">Two</span>
-    <span [style.color]="'brown'">Three</span>
+  <li *ngFor="let color of colors">
+    <div class="red">One {{ color }}</div>
+    <div [class]="color">Two {{ color }}</div>
+    <div [class.blue]="true">Three {{ color }}</div>
+    <!-- <div [class.blue]="true" [class.big]="''">Four {{ color }}</div> -->
+    <div [ngStyle]="styleFive">Five{{ color }}</div>
+    <div [ngClass]="{'red':true, 'blue':false, 'big':true}">Six {{ color }}</div>
   </li>
 </ul>
